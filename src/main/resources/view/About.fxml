@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jardelnovaes.games.javafx.tictactoefx.controller.AboutController">
+   <children>
+      <TitledPane prefHeight="400.0" prefWidth="398.0" text="About" textAlignment="CENTER">
+         <content>
+            <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Button id="btnClose" fx:id="btnClose" defaultButton="true" layoutX="341.0" layoutY="335.0" mnemonicParsing="false" text="Close" />
+                        <Separator layoutX="-2.0" layoutY="321.0" prefHeight="4.0" prefWidth="400.0" />
+                        <Label layoutX="71.0" layoutY="92.0" text="Simple App made with Java FX by Jardel Novaes" />
+                        <Hyperlink fx:id="linkedIn" layoutX="86.0" layoutY="128.0" onAction="#navigate" text="https://www.linkedin.com/in/jardelnovaes/" />
+                        <Hyperlink fx:id="github" layoutX="106.0" layoutY="164.0" onAction="#navigate" text="https://github.com/jardelnovaes/" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

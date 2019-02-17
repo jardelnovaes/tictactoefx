@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.jardelnovaes.games.javafx.tictactoefx.controller.PlayersController">
+   <children>
+      <TitledPane prefHeight="400.0" prefWidth="398.0" text="New Game - Players" textAlignment="CENTER">
+         <content>
+            <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Button id="btnSave" fx:id="btnSave" defaultButton="true" layoutX="283.0" layoutY="335.0" mnemonicParsing="false" text="Save" />
+                        <Button id="btnCancel" fx:id="btnClose" cancelButton="true" layoutX="330.0" layoutY="335.0" mnemonicParsing="false" text="Cancel" />
+                        <Separator layoutX="-2.0" layoutY="321.0" prefHeight="4.0" prefWidth="400.0" />
+                        <TitledPane animated="false" prefHeight="163.0" prefWidth="398.0" text="Player 1">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox id="chkP1Computer" fx:id="chkP1Computer" layoutX="63.0" layoutY="6.0" mnemonicParsing="false" text="Computer" />
+                                    <Label layoutX="14.0" layoutY="43.0" text="Name:" />
+                                    <TextField id="txtP1Name" fx:id="txtP1Name" layoutX="63.0" layoutY="39.0" prefHeight="25.0" prefWidth="319.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="-1.0" layoutY="163.0" prefHeight="163.0" prefWidth="398.0" text="Player 2">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox id="chkP2Computer" fx:id="chkP2Computer" layoutX="63.0" layoutY="6.0" mnemonicParsing="false" text="Computer" />
+                                    <Label layoutX="14.0" layoutY="43.0" text="Name:" />
+                                    <TextField id="txtP2Name" fx:id="txtP2Name" layoutX="63.0" layoutY="39.0" prefHeight="25.0" prefWidth="319.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
